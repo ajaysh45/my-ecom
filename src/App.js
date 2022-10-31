@@ -45,6 +45,7 @@ const App = () => {
     <GlobalStyle/>
     <Header/>
     <Routes>
+    {/* <Route path="/Header" element={<Header/>}/> */}
       <Route path="/" element={<Home/>}/>
       <Route path="/about" element={<About/>}/>
       <Route path="/products" element={<Products/>}/>

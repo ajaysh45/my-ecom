@@ -5,6 +5,7 @@ import App from "./App";
 import reportWebVitals from "./reportWebVitals";
 import { Auth0Provider } from "@auth0/auth0-react"
 import { AppProvider } from "./Context/ProductContext";
+import { FilterContextProvider } from "./Context/filter_context";
 const root = ReactDOM.createRoot(document.getElementById("root"));
 
 root.render(
@@ -14,9 +15,11 @@ root.render(
     redirectUri={window.location.origin}
 >
 <AppProvider>
+<FilterContextProvider> 
     <App />
+    </FilterContextProvider>
     </AppProvider>
-  // </Auth0Provider>,
+   </Auth0Provider>,
 
 );
 
